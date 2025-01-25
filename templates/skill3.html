@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <title>
+        Skill Azhar
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: -30px;
+            margin-top: 1px;
+        }
+
+        .back-to-home {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-to-home:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .back-to-home i {
+            margin-right: 5px;
+            font-size: 16px;
+        }
+
+        .home {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .content-box {
+            background-color: #000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            flex: 1;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+            font-family: 'Josefin Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .content-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            margin-bottom: 10px;
+        }
+
+        .content-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a class="home" href="{% url 'index' %}">Skill Azhar</a>
+        </div>
+        <a class="back-to-home" href="{% url 'index' %}">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+    <div class="content-box">
+        <h2>Panduan Lengkap: Cara Tidur dengan Cepat dan Nyenyak dari Pemula hingga Profesional</h2>
+        <p>Tidur yang cepat dan berkualitas sangat penting untuk kesehatan fisik, mental, dan emosional. Dalam panduan
+            ini, Anda akan belajar cara meningkatkan kemampuan tidur dari tingkat pemula hingga profesional, sehingga
+            Anda dapat tertidur dengan cepat dan bangun dengan segar setiap pagi.</p>
+        <hr>
+        <h2>Bagian 1: Dasar-Dasar Tidur Cepat (Pemula)</h2>
+        <h3>1.1. Memahami Tidur</h3>
+        <p>Tidur terdiri dari beberapa siklus yang mencakup fase ringan, fase dalam, dan REM (Rapid Eye Movement). Tidur
+            yang berkualitas melibatkan semua fase ini dalam jumlah yang cukup.</p>
+        <h3>1.2. Menciptakan Rutinitas Sebelum Tidur</h3>
+        <ul>
+            <li>Tetapkan waktu tidur tetap: Tidur dan bangun pada jam yang sama setiap hari membantu tubuh Anda memiliki
+                ritme tidur alami.</li>
+            <li>Buat ritual relaksasi: Lakukan kegiatan yang menenangkan, seperti membaca buku, meditasi, atau mandi air
+                hangat.</li>
+            <li>Kurangi paparan cahaya biru: Hindari penggunaan perangkat elektronik seperti ponsel dan laptop satu jam
+                sebelum tidur.</li>
+        </ul>
+        <h3>1.3. Mengoptimalkan Lingkungan Tidur</h3>
+        <ul>
+            <li>Cahaya: Buat kamar Anda gelap saat tidur. Gunakan tirai blackout jika perlu.</li>
+            <li>Suhu: Jaga suhu kamar antara 18-22°C.</li>
+            <li>Kenyamanan: Gunakan kasur dan bantal yang mendukung kenyamanan Anda.</li>
+        </ul>
+        <h3>1.4. Latihan Awal untuk Tidur Cepat</h3>
+        <ul>
+            <li>Berbaring dengan posisi nyaman dan fokus pada pernapasan.</li>
+            <li>Cobalah teknik pernapasan 4-7-8: Tarik napas selama 4 detik, tahan selama 7 detik, dan hembuskan selama
+                8 detik.</li>
+            <li>Hindari memaksa diri untuk tidur; relaksasi adalah kunci.</li>
+        </ul>
+        <hr>
+        <h2>Bagian 2: Meningkatkan Kualitas Tidur (Tingkat Moderat)</h2>
+        <h3>2.1. Teknik Relaksasi Lanjutan</h3>
+        <ul>
+            <li>Relaksasi otot progresif: Fokus pada setiap bagian tubuh Anda, mulai dari jari kaki hingga kepala, dan
+                lepaskan ketegangan secara bertahap.</li>
+            <li>Visualisasi: Bayangkan tempat yang menenangkan, seperti pantai atau padang rumput, untuk membantu
+                pikiran Anda rileks.</li>
+            <li>Meditasi mindfulness: Fokus pada napas atau sensasi tubuh untuk menghilangkan stres dan kecemasan.</li>
+        </ul>
+        <h3>2.2. Pola Hidup Sehat untuk Tidur yang Lebih Baik</h3>
+        <ul>
+            <li>Olahraga teratur: Lakukan olahraga ringan hingga sedang di siang hari, tetapi hindari olahraga berat
+                sebelum tidur.</li>
+            <li>Konsumsi makanan sehat: Hindari kafein, alkohol, dan makanan berat di malam hari.</li>
+            <li>Paparan sinar matahari: Habiskan waktu di luar ruangan pada pagi hari untuk mengatur ritme sirkadian
+                Anda.</li>
+        </ul>
+        <h3>2.3. Mengatasi Hambatan Tidur</h3>
+        <ul>
+            <li>Pikiran yang mengganggu: Tulis kekhawatiran atau tugas Anda di buku catatan sebelum tidur.</li>
+            <li>Gangguan suara: Gunakan penutup telinga atau suara putih (white noise) untuk meredam suara yang
+                mengganggu.</li>
+            <li>Insomnia ringan: Cobalah tidur siang singkat (15-20 menit) jika diperlukan, tetapi hindari tidur siang
+                terlalu lama.</li>
+        </ul>
+        <hr>
+        <h2>Bagian 3: Menguasai Seni Tidur Cepat (Tingkat Profesional)</h2>
+        <h3>3.1. Teknik Profesional untuk Tidur Cepat</h3>
+        <ul>
+            <li>Metode Militer: Teknik ini melibatkan relaksasi seluruh tubuh sambil membayangkan pemandangan yang
+                menenangkan. Fokus pada pernapasan sambil mengatakan, "Jangan berpikir" selama 10 detik.</li>
+            <li>Chronotype Optimization: Kenali ritme biologis Anda (burung pagi atau burung malam) dan sesuaikan jadwal
+                tidur Anda.</li>
+            <li>Sleep Restriction Therapy: Jika Anda mengalami insomnia kronis, batasi waktu di tempat tidur untuk
+                meningkatkan efisiensi tidur. Perlu bimbingan ahli.</li>
+        </ul>
+        <h3>3.2. Teknologi untuk Membantu Tidur</h3>
+        <ul>
+            <li>Aplikasi tidur: Gunakan aplikasi seperti Calm, Headspace, atau Sleep Cycle untuk melacak dan
+                meningkatkan kualitas tidur.</li>
+            <li>Lampu terapi: Gunakan lampu terapi cahaya untuk mengatur ritme sirkadian, terutama jika Anda bekerja
+                dalam ruangan atau menghadapi jet lag.</li>
+            <li>Alat pemantau tidur: Gunakan perangkat seperti smartwatch untuk memantau pola tidur Anda.</li>
+        </ul>
+        <h3>3.3. Menjaga Konsistensi Tidur Jangka Panjang</h3>
+        <ul>
+            <li>Rutinitas tetap: Jangan abaikan jadwal tidur, bahkan di akhir pekan.</li>
+            <li>Evaluasi pola tidur: Tinjau pola tidur Anda setiap bulan untuk mengetahui area yang perlu diperbaiki.
+            </li>
+            <li>Hindari stres kronis: Temukan cara untuk mengelola stres secara efektif, seperti yoga atau konseling.
+            </li>
+        </ul>
+        <h3>3.4. Latihan Intensif untuk Tidur yang Lebih Cepat</h3>
+        <ul>
+            <li>Simulasi malam sulit: Latih teknik relaksasi di lingkungan yang kurang ideal untuk meningkatkan
+                kemampuan tidur Anda.</li>
+            <li>Tantang diri Anda: Cobalah mengurangi waktu tertidur setiap minggu dengan menggunakan teknik yang
+                dipelajari.</li>
+            <li>Tingkatkan fleksibilitas: Pelajari cara tidur dengan cepat di berbagai situasi, seperti dalam perjalanan
+                atau di tempat yang tidak biasa.</li>
+        </ul>
+        <hr>
+        <h2>Tips Tambahan</h2>
+        <ul>
+            <li>Jangan menekan diri: Semakin Anda memaksa untuk tidur, semakin sulit untuk tidur. Fokus pada relaksasi.
+            </li>
+            <li>Latihan napas harian: Jadikan latihan pernapasan sebagai bagian dari rutinitas harian untuk meningkatkan
+                ketenangan pikiran.</li>
+            <li>Kenali tubuh Anda: Perhatikan apa yang bekerja untuk Anda dan sesuaikan rutinitas Anda.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>
+            @Hak Cipta oleh Azhar
+        </p>
+    </div>
+</body>
+
+</html>

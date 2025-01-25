@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <title>
+        Skill Azhar
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            filter: grayscale(100%);
+            transition: filter 0.3s, transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 0.3s;
+            border-radius: 10px;
+        }
+
+        .gallery-item .overlay span {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .gallery-item .overlay .button {
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Josefin Sans', sans-serif;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .gallery-item .overlay .button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Skill Azhar
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img alt="Person reading a book" height="400"
+                src="https://storage.googleapis.com/a1aa/image/LbcwwGwvBG71D1jl4rUFsAqv17MH2BorVW9XITLXNuGzteDKA.jpg"
+                width="600" />
+            <div class="overlay">
+                <span>
+                    Membaca Cepat
+                </span>
+                <a class="button" href="{% url 'Skill_Pertama' %}">
+                    Lihat
+                </a>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img alt="Person memorizing" height="400"
+                src="https://storage.googleapis.com/a1aa/image/pOCpjhh2eA1fwEneyp1i4adj7xuob3nk5SVLzp8jyXpcu1PoA.jpg"
+                width="600" />
+            <div class="overlay">
+                <span>
+                    Menghafal Cepat
+                </span>
+                <a class="button" href="{% url 'Skill_Kedua' %}">
+                    Lihat
+                </a>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img alt="Person sleeping soundly with a smile" height="400"
+                src="https://storage.googleapis.com/a1aa/image/tV23nFQG0n5nFFOMe6UEiLe4DNkMukRsSazSWqnsgTrN36HUA.jpg"
+                width="600" />
+            <div class="overlay">
+                <span>
+                    Tidur Berkualitas
+                </span>
+                <a class="button" href="{% url 'Skill_Ketiga' %}">
+                    Lihat
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            @Hak Cipta oleh Azhar
+        </p>
+    </div>
+</body>
+
+</html>

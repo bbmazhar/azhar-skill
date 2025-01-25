@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <title>
+        Skill Azhar
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: -30px;
+            margin-top: 1px;
+        }
+
+        .back-to-home {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-to-home:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .back-to-home i {
+            margin-right: 5px;
+            font-size: 16px;
+        }
+
+        .home {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .content-box {
+            background-color: #000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            flex: 1;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #fff;
+            font-family: 'Josefin Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .content-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            margin-bottom: 10px;
+        }
+
+        .content-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .content-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a class="home" href="{% url 'index' %}">Skill Azhar</a>
+        </div>
+        <a class="back-to-home" href="{% url 'index' %}">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+    <div class="content-box">
+        <h2>Panduan Lengkap: Cara Membaca Cepat dari Pemula hingga Profesional</h2>
+        <p>Membaca cepat adalah keterampilan yang sangat bermanfaat, terutama di era informasi seperti sekarang. Dengan
+            membaca cepat, Anda dapat menyerap lebih banyak informasi dalam waktu yang lebih singkat tanpa mengorbankan
+            pemahaman. Dalam panduan ini, Anda akan belajar bagaimana meningkatkan kemampuan membaca cepat dari tingkat
+            pemula hingga profesional.</p>
+        <hr>
+        <h2>Bagian 1: Dasar-Dasar Membaca Cepat (Pemula)</h2>
+        <h3>1.1. Memahami Membaca Cepat</h3>
+        <p>Membaca cepat adalah proses membaca dengan kecepatan yang lebih tinggi dari rata-rata (sekitar 200-300 kata
+            per menit) sambil tetap memahami isi teks. Membaca cepat bukan sekadar membaca lebih cepat, tetapi juga
+            melibatkan keterampilan memahami konteks dengan efektif.</p>
+        <h3>1.2. Menyiapkan Pikiran dan Lingkungan</h3>
+        <ul>
+            <li>Lingkungan yang tenang: Pastikan Anda membaca di tempat yang bebas dari gangguan.</li>
+            <li>Fokus: Matikan notifikasi pada perangkat elektronik Anda.</li>
+            <li>Tujuan: Tetapkan tujuan membaca, misalnya mencari poin penting atau memahami gambaran umum.</li>
+        </ul>
+        <h3>1.3. Teknik Dasar Membaca Cepat</h3>
+        <ul>
+            <li>Hilangkan subvokalisasi: Subvokalisasi adalah kebiasaan "membaca dalam hati" dengan melafalkan setiap
+                kata. Cobalah mengurangi kebiasaan ini dengan fokus pada pengenalan kata visual.</li>
+            <li>Gunakan panduan visual: Gunakan jari atau pena untuk menuntun mata Anda saat membaca. Ini membantu
+                meningkatkan fokus dan mengurangi regresi (kembali membaca bagian yang sudah dibaca).</li>
+            <li>Perluas pandangan mata: Alih-alih membaca kata per kata, coba tangkap beberapa kata sekaligus dalam satu
+                pandangan.</li>
+        </ul>
+        <h3>1.4. Latihan Awal</h3>
+        <ul>
+            <li>Baca teks pendek (300-500 kata) dengan fokus pada kecepatan.</li>
+            <li>Gunakan stopwatch untuk mengukur waktu membaca Anda.</li>
+            <li>Evaluasi: Apa yang Anda pahami setelah membaca? Tingkatkan sedikit demi sedikit.</li>
+        </ul>
+        <hr>
+        <h2>Bagian 2: Meningkatkan Kecepatan Membaca (Tingkat Moderat)</h2>
+        <h3>2.1. Teknik Membaca Lebih Cepat</h3>
+        <ul>
+            <li>Skimming: Teknik ini melibatkan membaca cepat untuk mendapatkan gambaran umum. Fokus pada kata kunci,
+                subjudul, dan poin penting.</li>
+            <li>Scanning: Cari informasi spesifik tanpa membaca seluruh teks. Teknik ini berguna untuk mencari angka,
+                nama, atau detail tertentu.</li>
+            <li>Chunking: Pecah teks menjadi kelompok kata ("chunks") untuk dibaca sekaligus.</li>
+        </ul>
+        <h3>2.2. Mengatasi Hambatan Membaca Cepat</h3>
+        <ul>
+            <li>Regresi: Kurangi kebiasaan kembali membaca teks yang sudah dibaca. Latih mata Anda untuk tetap maju.
+            </li>
+            <li>Konsentrasi rendah: Gunakan timer untuk membaca dalam interval pendek (misalnya, 10 menit), lalu
+                istirahat sejenak.</li>
+            <li>Kosa kata terbatas: Perluas kosa kata Anda dengan membaca berbagai jenis teks.</li>
+        </ul>
+        <h3>2.3. Alat Bantu Membaca Cepat</h3>
+        <ul>
+            <li>Aplikasi membaca cepat: Gunakan aplikasi seperti Spritz atau Spreeder untuk melatih fokus dan kecepatan.
+            </li>
+            <li>Buku khusus: Bacalah buku yang dirancang untuk meningkatkan kecepatan membaca, seperti <em>"The Speed
+                    Reading Book"</em> karya Tony Buzan.</li>
+        </ul>
+        <h3>2.4. Latihan Rutin</h3>
+        <ul>
+            <li>Tetapkan waktu harian untuk latihan membaca cepat.</li>
+            <li>Catat kecepatan membaca Anda setiap minggu dan evaluasi perkembangan Anda.</li>
+            <li>Baca berbagai jenis teks (fiksi, nonfiksi, artikel, jurnal) untuk melatih fleksibilitas.</li>
+        </ul>
+        <hr>
+        <h2>Bagian 3: Menguasai Membaca Cepat (Tingkat Profesional)</h2>
+        <h3>3.1. Teknik Profesional</h3>
+        <ul>
+            <li>Metode RSVP (Rapid Serial Visual Presentation): Teknik ini menampilkan kata-kata satu per satu dengan
+                cepat di layar. Fokus pada teks yang muncul tanpa memindai halaman.</li>
+            <li>Previewing: Sebelum membaca, preview isi teks dengan membaca daftar isi, subjudul, atau ringkasan.</li>
+            <li>Membaca selektif: Pilih bagian teks yang relevan dan abaikan yang kurang penting.</li>
+        </ul>
+        <h3>3.2. Menjaga Pemahaman</h3>
+        <ul>
+            <li>Mencatat poin penting: Gunakan metode seperti mind mapping untuk mencatat poin-poin utama.</li>
+            <li>Mengajukan pertanyaan: Tanyakan pada diri Anda, "Apa inti dari teks ini?" sebelum dan sesudah membaca.
+            </li>
+            <li>Mereview: Setelah membaca, luangkan waktu untuk mereview dan merangkum.</li>
+        </ul>
+        <h3>3.3. Mengelola Kecepatan Membaca</h3>
+        <ul>
+            <li>Bervariasi sesuai tujuan: Bacalah dengan cepat untuk skimming, tetapi perlambat untuk bagian penting
+                yang memerlukan pemahaman mendalam.</li>
+            <li>Fokus pada tingkat akurasi: Kecepatan membaca Anda tidak berarti jika pemahaman Anda menurun.</li>
+        </ul>
+        <h3>3.4. Latihan Intensif</h3>
+        <ul>
+            <li>Ikuti kursus membaca cepat profesional.</li>
+            <li>Latihan membaca dengan teks yang lebih kompleks, seperti makalah ilmiah atau dokumen hukum.</li>
+            <li>Uji pemahaman Anda dengan kuis atau tes online.</li>
+        </ul>
+        <hr>
+        <h2>Tips Tambahan</h2>
+        <ul>
+            <li>Jaga kesehatan mata: Istirahatkan mata setiap 20 menit dengan melihat ke objek jauh.</li>
+            <li>Baca secara aktif: Jadilah pembaca yang aktif dengan mengajukan pertanyaan dan mencari hubungan
+                antaride.</li>
+            <li>Berlatih konsisten: Membaca cepat adalah keterampilan yang membutuhkan waktu untuk berkembang.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>
+            @Hak Cipta oleh Azhar
+        </p>
+    </div>
+</body>
+
+</html>
